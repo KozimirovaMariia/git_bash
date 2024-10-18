@@ -1,0 +1,315 @@
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/tes
+t4
+$ cd -
+/c/Users/Mariia/Desktop/Functional Testing RusauA course/HTML CSS/bash_training
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training
+$ mkdir test3
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training
+$ cd test3
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/tes
+t3
+$ touch 4
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/tes
+t3
+$ echo row1 >> 4
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/tes
+t3
+$ echo row2 >> 4
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/tes
+t3
+$ echo row3 >> 4
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/tes
+t3
+$ echo row4 >> 4
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/tes
+t3
+$ cp 4 5
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/tes
+t3
+$ cp 4 6
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/tes
+sh_training/test3
+$ grep "row2" 5
+row2
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/test3
+$ grep -r "row"
+4:row1
+4:row2
+4:row3
+4:row4
+5:row1
+5:row2
+5:row3
+5:row4
+6:row1
+6:row2
+6:row3
+6:row4
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/test3
+$ grep -c "row" 6
+4
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/test3
+$ find 5
+5
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/test3
+$ find 5 -delete
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/test3
+$ echo test >>4
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/test3
+$ sed -i 's/test/fail/g' 4
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/test3
+$ echo test >>4
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/test3
+$ ps aux
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     1762       1    1762       3288  cons0     197609 10:13:08 /usr/bin/bash
+     1852    1762    1852       2440  cons0     197609 10:28:40 /usr/bin/ps
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/test3
+$ kill 666
+bash: kill: (666) - No such process
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training/test3
+$ ping rusau.net
+
+Обмен пакетами с rusau.net [5.181.161.75] с 32 байтами данных:
+Ответ от 5.181.161.75: число байт=32 время=158мс TTL=55
+Ответ от 5.181.161.75: число байт=32 время=269мс TTL=51
+Ответ от 5.181.161.75: число байт=32 время=227мс TTL=51
+Ответ от 5.181.161.75: число байт=32 время=189мс TTL=51
+
+Статистика Ping для 5.181.161.75:
+    Пакетов: отправлено = 4, получено = 4, потеряно = 0
+    (0% потерь)
+Приблизительное время приема-передачи в мс:
+    Минимальное = 158мсек, Максимальное = 269 мсек, Среднее = 210 мсек
+
+    Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training
+$ ping -i 5 rusau.net
+
+Обмен пакетами с rusau.net [5.181.161.75] с 32 байтами данных:
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+
+Статистика Ping для 5.181.161.75:
+    Пакетов: отправлено = 4, получено = 0, потеряно = 4
+    (100% потерь)
+
+    Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training
+$ curl https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=pending&status=sold
+[1] 1493
+[2] 1494
+[2]+  Done                    status=pending
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training
+$ [{"id":55552,"category":{"id":0,"name":"string"},"name":"CatTesttest","photoUrls":["string"],"tags":[
+{"id":0,"name":"string"}],"status":"available"},{"id":555111222376,"category":{"id":0,"name":"string"},
+"name":"Dragon","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":55
+5111222377,"category":{"id":0,"name":"string"},"name":"Dragon","photoUrls":["string"],"tags":[{"id":0,"
+name":"string"}],"status":"available"},{"id":555111222378,"category":{"id":0,"name":"string"},"name":"D
+ragon","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":55511122237
+9,"category":{"id":0,"name":"string"},"name":"Dragon","photoUrls":["string"],"tags":[{"id":0,"name":"st
+ring"}],"status":"available"},{"id":555111222382,"category":{"id":95987592,"name":"Lorem in anim volupt
+ate"},"name":"doggie","photoUrls":["nostrud nisi dolor exe","id fugiat eu sint"],"tags":[{"id":-7810647
+8,"name":"eu"},{"id":-94151591,"name":"ad ullamco"}],"status":"available"},{"id":555111222389,"category
+":{"id":0,"name":"string"},"name":"Dragon","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"st
+atus":"available"},{"id":555111222390,"category":{"id":0,"name":"string"},"name":"Dragon","photoUrls":[
+"string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":555111222391,"category":{"id":0
+,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"av
+ailable"},{"id":555111222392,"category":{"id":0,"name":"string"},"name":"sample1","photoUrls":["string"
+],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":555111222393,"category":{"id":0,"name":
+"string"},"name":"sample2","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available
+"},{"id":555111222394,"category":{"id":0,"name":"Roger"},"name":"Dinosaur","photoUrls":["string"],"tags
+":[{"id":0,"name":"string"}],"status":"available"},{"id":879789789789792,"category":{"id":0,"name":"str
+ing"},"name":"morce","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"i
+d":879789789789793,"category":{"id":0,"name":"string"},"name":"Dragon","photoUrls":["string"],"tags":[{
+"id":0,"name":"string"}],"status":"available"},{"id":879789789789794,"category":{"id":0,"name":"string"
+},"name":"Dragon","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":
+879789789789796,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id
+":0,"name":"string"}],"status":"available"},{"id":879789789789797,"category":{"id":0,"name":"string"},"
+name":"Dragon","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":879
+789789789799,"category":{"id":0,"name":"string"},"name":"Dragon","photoUrls":["string"],"tags":[{"id":0
+,"name":"string"}],"status":"available"},{"id":879789789789806,"category":{"id":0,"name":"string"},"nam
+e":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":87978978
+9789809,"category":{"id":0,"name":"string"},"name":"Dragon","photoUrls":["string"],"tags":[{"id":0,"nam
+e":"string"}],"status":"available"},{"id":879789789789812,"category":{"id":0,"name":"Dog"},"name":"Leo"
+,"photoUrls":["C:\\Users\\tqeuser01\\Documents\\Jenkins\\workspace\\Monitor SUTAP Web Module\\tp_sutap_
+core_regression_apihttps://www.akc.org/wp-content/uploads/2017/11/German-Shepherd-on-White-00.jpg"],"ta
+gs":[{"id":0,"name":"GermanShepherd"}],"status":"available"},{"id":879789789789813,"category":{"id":0,"
+name":"string"},"name":"CatTest","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"ava
+ilable"},{"id":51224534534,"category":{"id":0,"name":"string"},"name":"Kaylie2","photoUrls":["string"],
+"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":879789789789814,"category":{"id":0,"name"
+:"dog"},"name":"Leo","photoUrls":["https://www.akc.org/wp-content/uploads/2017/11/German-Shepherd-on-Wh
+ite-00.jpg"],"tags":[{"id":0,"name":"GermanShepherd"}],"status":"available"},{"id":879789789789815,"cat
+egory":{"id":0,"name":"string"},"name":"Dragon","photoUrls":["string"],"tags":[{"id":0,"name":"string"}
+],"status":"available"},{"id":879789789789816,"category":{"id":0,"name":"dog"},"name":"Leo","photoUrls"
+:["https://www.akc.org/wp-content/uploads/2017/11/German-Shepherd-on-White-00.jpg"],"tags":[{"id":0,"na
+me":"GermanShepherd"}],"status":"available"},{"id":879789789789817,"category":{"id":0,"name":"string"},
+"name":"Dragon","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":85
+7547,"category":{"id":0,"name":"Buldog"},"name":"finoNew","photoUrls":["string"],"tags":[{"id":0,"name"
+:"the best dog"}],"status":"available"},{"id":879789789789819,"category":{"id":0,"name":"string"},"name
+":"Dragon","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":8797897
+89789820,"category":{"id":0,"name":"string"},"name":"Dragon","photoUrls":["string"],"tags":[{"id":0,"na
+me":"string"}],"status":"available"},{"id":879789789789822,"category":{"id":0,"name":"string"},"name":"
+doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":8797897897
+89825,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"
+string"}],"status":"available"},{"id":879789789789826,"category":{"id":0,"name":"string"},"name":"doggi
+e","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":222,"category":
+{"id":2,"name":"Beagle"},"name":"Beagle_Eagle","photoUrls":["3"],"tags":[{"id":0,"name":"Beagle_Eagle_4
+"}],"status":"available"},{"id":1234055,"category":{"id":0,"name":"string"},"name":"Crunchy","photoUrls
+":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":112233,"category":{"id":30,"
+name":"Eq-dog"},"name":"Postman","photoUrls":["URLLink"],"tags":[{"id":10,"name":"Doberman"}],"status":
+"available"},{"id":879789789789888,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["stri
+ng"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":879789789789889,"category":{"id":0,"
+name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"availa
+ble"},{"id":879789789789890,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"t
+ags":[{"id":0,"name":"string"}],"status":"available"},{"id":21,"category":{"id":0,"name":"string"},"nam
+e":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":25,"ca
+tegory":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"
+}],"status":"available"},{"id":23,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["str
+ing"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":879789789789898,"category":{"id":0,
+"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"ava
+ilable"},{"id":879789789789899,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string
+"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":879789789789900,"category":{"id":0,"na
+me":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"availa
+ble"},{"id":879789789789901,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],
+"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":20,"category":{"id":0,"name":"string"},"n
+ame":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":8797
+89789789946,"category":{"id":0,"name":"string"},"name":"test","photoUrls":["string"],"tags":[{"id":0,"n
+ame":"string"}],"status":"available"},{"id":1245,"category":{"id":1245,"name":"xyz"},"name":"xyz","phot
+oUrls":["test"],"tags":[],"status":"available"},{"id":879789789789970,"category":{"id":0,"name":"string
+"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":8
+79789789789975,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id"
+:0,"name":"string"}],"status":"available"},{"id":879789789789979,"category":{"id":0,"name":"string"},"n
+ame":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":12345,
+"category":{"id":123,"name":"123456"},"name":"<string>","photoUrls":[],"tags":[],"status":"available"},
+{"id":879789789790008,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags"
+:[{"id":0,"name":"string"}],"status":"available"},{"id":879789789790011,"category":{"id":0,"name":"stri
+ng"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id"
+:879789789790018,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"i
+d":0,"name":"string"}],"status":"available"},{"id":879789789790019,"category":{"id":0,"name":"string"},
+"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":87
+9789789790022,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,
+"name":"string"}],"status":"available"},{"id":879789789790023,"category":{"id":10,"name":"ZAP"},"name":
+"ZAP","photoUrls":["John Doe"],"tags":[{"id":10,"name":"ZAP"}],"status":"available"},{"id":879789789790
+024,"category":{"id":10,"name":"ZAP"},"name":"ZAP","photoUrls":["John Doe"],"tags":[{"id":10,"name":"ZA
+P"}],"status":"available"},{"id":879789789790025,"category":{"id":10,"name":"ZAP"},"name":"ZAP","photoU
+rls":["John Doe"],"tags":[{"id":10,"name":"ZAP"}],"status":"available"},{"id":879789789790026,"category
+":{"id":10,"name":"ZAP"},"name":"ZAP","photoUrls":["John Doe"],"tags":[{"id":10,"name":"ZAP"}],"status"
+:"available"},{"id":879789789790027,"category":{"id":10,"name":"ZAP"},"name":"ZAP","photoUrls":["John D
+oe"],"tags":[{"id":10,"name":"ZAP"}],"status":"available"},{"id":879789789790028,"category":{"id":10,"n
+ame":"ZAP"},"name":"ZAP","photoUrls":["John Doe"],"tags":[{"id":10,"name":"ZAP"}],"status":"available"}
+,{"id":9222968140491042131,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"
+tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042135,"name":"doggie","photo
+Urls":["string"],"tags":[],"status":"available"},{"id":9222968140491042136,"name":"doggie","photoUrls":
+["string"],"tags":[],"status":"available"},{"id":9222968140491042137,"name":"doggie","photoUrls":["stri
+ng"],"tags":[],"status":"available"},{"id":9222968140491042138,"name":"doggie","photoUrls":["string"],"
+tags":[],"status":"available"},{"id":9222968140491042141,"category":{"id":0,"name":"string"},"name":"do
+ggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":922296814049
+1042143,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name"
+:"string"}],"status":"available"},{"id":9222968140491042144,"category":{"id":0,"name":"string"},"name":
+"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":92229681404
+91042147,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name
+":"string"}],"status":"available"},{"id":9222968140491042153,"category":{"id":0,"name":"string"},"name"
+:"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140
+491042196,"name":"doggie","photoUrls":["string"],"tags":[],"status":"available"},{"id":9222968140491042
+197,"name":"doggie","photoUrls":["string"],"tags":[],"status":"available"},{"id":9222968140491042199,"n
+ame":"doggie","photoUrls":["string"],"tags":[],"status":"available"},{"id":9222968140491042200,"name":"
+doggie","photoUrls":["string"],"tags":[],"status":"available"},{"id":9222968140497180179,"category":{"i
+d":0,"name":"string"},"name":"test","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"
+available"},{"id":9222968140497180302,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":[
+"string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180306,"category":
+{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status
+":"available"},{"id":9222968140497180309,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls
+":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180313,"categor
+y":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"sta
+tus":"available"},{"id":9222968140497180354,"category":{"id":0,"name":"string"},"name":"fish","photoUrl
+s":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180364,"catego
+ry":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"
+status":"available"},{"id":9222968140497180371,"category":{"id":0,"name":"string"},"name":"fish","photo
+Urls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":28,"category":{"id":0,"n
+ame":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"avail
+able"},{"id":9222968140497180393,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["stri
+ng"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180406,"category":{"id"
+:0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"av
+ailable"},{"id":9222968140497180422,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["str
+ing"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180423,"category":{"id
+":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"a
+vailable"},{"id":9222968140497180424,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["st
+ring"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":30,"category":{"id":0,"name":"stri
+ng"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"i
+d":9222968140497180567,"category":{"id":0,"name":"Jerry"},"name":"Mouse","photoUrls":["string"],"tags":
+[{"id":0,"name":"Mouse"}],"status":"available"},{"id":9222968140497180568,"category":{"id":0,"name":"st
+ring"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"i
+d":9222968140497180570,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":
+[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180573,"category":{"id":0,"name":"s
+tring"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},
+{"id":9222968140497180574,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tag
+s":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180662,"category":{"id":0,"name"
+:"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available
+"},{"id":9222968140497180670,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"]
+,"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180673,"category":{"id":0,"
+name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"availa
+ble"},{"id":9222968140497180676,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["strin
+g"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180682,"category":{"id":
+0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"ava
+ilable"},{"id":9222968140497180704,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["stri
+ng"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180706,"category":{"id"
+:0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"av
+ailable"},{"id":9222968140497180707,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["str
+ing"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180710,"category":{"id
+":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"a
+vailable"},{"id":9222968140497180724,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["
+string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180734,"category":{
+"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status"
+:"available"},{"id":9222968140497180746,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls"
+:["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180748,"category
+":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"stat
+us":"available"}]
+[1]+  Done                    curl https://petstore.swagger.io/v2/pet/findByStatus?status=available
+
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training
+$ curl -X POST https://petstore.swagger.io/v2/pet \
+> -H "Content-Type: application/json" \
+> --data '{
+>   "id": 0,
+>   "category": {
+>     "id": 0,
+>     "name": "string"
+>   },
+>   "name": "doggiedog",
+>   "photoUrls": [
+>     "string"
+>   ],
+>   "tags": [
+>     {
+>       "id": 0,
+>       "name": "string"
+>     }
+>   ],
+>   "status": "available"
+> }'
+{"id":9222968140497181981,"category":{"id":0,"name":"string"},"name":"doggiedog","photoUrls":["string"]
+,"tags":[{"id":0,"name":"string"}],"status":"available"}
+Mariia@DESKTOP-NGJ3G00 MINGW64 ~/Desktop/Functional Testing RusauA course/HTML CSS/bash_training
+$
